@@ -1,342 +1,39 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-	<title>My Task List</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<link rel="stylesheet" href="theme.css" />
-	<script src="js/jquery.js"></script>
-	<script type="text/javascript">
-		$(document).bind("mobileinit", function(){
-		 $.extend(  $.mobile , {
-		 defaultPageTransition: 'none' 
-		});
 
-		 $.mobile.defaultPageTransition = 'none';
-		 $.mobile.defaultDialogTransition = 'none';
-		});
-	</script>
-	<script src="js/jqm.js"></script>	
-</head> 
-<body> 
-
-
-
-
-
-
-<!--       #######     USER    PAGES    #######      -->
-
-<div data-role="page" id="userinfo">
-
-	<div data-role="header" data-position="fixed">
-		<h1>User</h1>
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#userinfo" class="ui-btn-active ui-state-persist" >Info</a></li>
-				<li><a href="#useritems" >Items</a></li>
-				<li><a href="#userrequests" >Requests</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /header -->
-	
-	
-<div data-role="footer"  data-position="fixed">
-			<div data-role="navbar">
-			<ul>
-				<li><a href="#userinfo" class="ui-btn-active ui-state-persist" >User</a></li>
-				<li><a href="#housetask4sale" >House</a></li>
-				<li><a href="#cleanoffcurrent" >Clean-Off</a></li>
-				<li><a href="#shoppage" >Shop</a></li>
-				<li><a href="#settingstasks" >Setttings</a></li>
-			</ul>
-		</div><!-- /navbar -->
-</div>
-</div><!-- /page -->
-
-<div data-role="page" id="useritems">
-
-	<div data-role="header" data-position="fixed">
-		<h1>User</h1>
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#userinfo" >Info</a></li>
-				<li><a href="#useritems" class="ui-btn-active ui-state-persist" >Items</a></li>
-				<li><a href="#userrequests" >Requests</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /header -->
-	
-	
-<div data-role="footer"  data-position="fixed">
-			<div data-role="navbar">
-			<ul>
-				<li><a href="#userinfo" class="ui-btn-active ui-state-persist" >User</a></li>
-				<li><a href="#housetask4sale" >House</a></li>
-				<li><a href="#cleanoffcurrent" >Clean-Off</a></li>
-				<li><a href="#shoppage" >Shop</a></li>
-				<li><a href="#settingstasks" >Setttings</a></li>
-			</ul>
-		</div><!-- /navbar -->
-</div>
-</div><!-- /page -->
-
-<div data-role="page" id="userrequests">
-
-	<div data-role="header" data-position="fixed">
-		<h1>User</h1>
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#userinfo" >Info</a></li>
-				<li><a href="#useritems" >Items</a></li>
-				<li><a href="#userrequests" class="ui-btn-active ui-state-persist" >Requests</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /header -->
-	
-	
-<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-			<ul>
-				<li><a href="#userinfo" class="ui-btn-active ui-state-persist" >User</a></li>
-				<li><a href="#housetask4sale" >House</a></li>
-				<li><a href="#cleanoffcurrent" >Clean-Off</a></li>
-				<li><a href="#shoppage" >Shop</a></li>
-				<li><a href="#settingstasks" >Setttings</a></li>
-			</ul>
-		</div><!-- /navbar -->
-</div>
-</div><!-- /page -->
-
-
-
-
-
-<!--       #######     HOUSE    PAGES    #######      -->
-
-<div data-role="page" id="housetask4sale">
-
-	<div data-role="header" data-position="fixed">
-		<h1>House</h1>
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#housetask4sale" class="ui-btn-active ui-state-persist" >tasks 4 sale</a></li>
-				<li><a href="#housethisweek" >This Week</a></li>
-				<li><a href="#housenextweek" >Next Week</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /header -->
-	
-	
-<div data-role="footer"  data-position="fixed">
-			<div data-role="navbar">
-			<ul>
-				<li><a href="#userinfo"  >User</a></li>
-				<li><a href="#housetask4sale"class="ui-btn-active ui-state-persist"  >House</a></li>
-				<li><a href="#cleanoffcurrent" >Clean-Off</a></li>
-				<li><a href="#shoppage" >Shop</a></li>
-				<li><a href="#settingstasks" >Setttings</a></li>
-			</ul>
-		</div><!-- /navbar -->
-</div>
-</div><!-- /page -->
-
-<div data-role="page" id="housethisweek">
-
-	<div data-role="header" data-position="fixed">
-		<h1>House</h1>
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#housetask4sale"  >tasks 4 sale</a></li>
-				<li><a href="#housethisweek" class="ui-btn-active ui-state-persist" >This Week</a></li>
-				<li><a href="#housenextweek" >Next Week</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /header -->
-	
-	
-<div data-role="footer"  data-position="fixed">
-			<div data-role="navbar">
-			<ul>
-				<li><a href="#userinfo" >User</a></li>
-				<li><a href="#housetask4sale" class="ui-btn-active ui-state-persist"  >House</a></li>
-				<li><a href="#cleanoffcurrent" >Clean-Off</a></li>
-				<li><a href="#shoppage" >Shop</a></li>
-				<li><a href="#settingstasks" >Setttings</a></li>
-			</ul>
-		</div><!-- /navbar -->
-</div>
-</div><!-- /page -->
-
-<div data-role="page" id="housenextweek">
-
-	<div data-role="header" data-position="fixed">
-		<h1>House</h1>
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#housetask4sale"  >tasks 4 sale</a></li>
-				<li><a href="#housethisweek" >This Week</a></li>
-				<li><a href="#housenextweek" class="ui-btn-active ui-state-persist" >Next Week</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /header -->
-	
-	
-<div data-role="footer"data-position="fixed">
-			<div data-role="navbar">
-			<ul>
-				<li><a href="#userinfo" >User</a></li>
-				<li><a href="#housetask4sale" class="ui-btn-active ui-state-persist"  >House</a></li>
-				<li><a href="#cleanoffcurrent" >Clean-Off</a></li>
-				<li><a href="#shoppage" >Shop</a></li>
-				<li><a href="#settingstasks" >Setttings</a></li>
-			</ul>
-		</div><!-- /navbar -->
-</div>
-</div><!-- /page -->
-
-
-
-
-<!--       #######     CLEAN OFF    PAGES    #######      -->
-
-<div data-role="page" id="cleanoffcurrent">
-
-	<div data-role="header" data-position="fixed">
-		<h1>Clean-Offs</h1>
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#cleanoffcurrent" class="ui-btn-active ui-state-persist"  >Current</a></li>
-				<li><a href="#cleanoffcompleted" >Completed</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /header -->
-	
-	
-<div data-role="footer"  data-position="fixed">
-			<div data-role="navbar">
-			<ul>
-				<li><a href="#userinfo" >User</a></li>
-				<li><a href="#housetask4sale" >House</a></li>
-				<li><a href="#cleanoffcurrent"  class="ui-btn-active ui-state-persist" >Clean-Off</a></li>
-				<li><a href="#shoppage" >Shop</a></li>
-				<li><a href="#settingstasks" >Setttings</a></li>
-			</ul>
-		</div><!-- /navbar -->
-</div>
-</div><!-- /page -->
-
-
-<div data-role="page" id="cleanoffcompleted">
-
-	<div data-role="header" data-position="fixed">
-		<h1>Clean-Offs</h1>
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#cleanoffcurrent"   >Current</a></li>
-				<li><a href="#cleanoffcompleted" class="ui-btn-active ui-state-persist" >Completed</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /header -->
-	
-	
-<div data-role="footer"  data-position="fixed">
-			<div data-role="navbar">
-			<ul>
-				<li><a href="#userinfo" >User</a></li>
-				<li><a href="#housetask4sale" >House</a></li>
-				<li><a href="#cleanoffcurrent"  class="ui-btn-active ui-state-persist" >Clean-Off</a></li>
-				<li><a href="#shoppage" >Shop</a></li>
-				<li><a href="#settingstasks" >Setttings</a></li>
-			</ul>
-		</div><!-- /navbar -->
-</div>
-</div><!-- /page -->
-
-<!--       #######     SHOP PAGE   #######      -->
-
-
-<div data-role="page" id="shoppage">
-
-	<div data-role="header" data-position="fixed">
-		<h1>Shop</h1>
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#shoppage" class="ui-btn-active ui-state-persist" >Items</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /header -->
-	
-	
-<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-			<ul>
-				<li><a href="#userinfo" >User</a></li>
-				<li><a href="#housetask4sale" >House</a></li>
-				<li><a href="#cleanoffcurrent"   >Clean-Off</a></li>
-				<li><a href="#shoppage" class="ui-btn-active ui-state-persist" >Shop</a></li>
-				<li><a href="#settingstasks" >Setttings</a></li>
-			</ul>
-		</div><!-- /navbar -->
-</div>
-</div><!-- /page -->
-
-
-<!--       #######     SETTINGS PAGE   #######      -->
-
-<div data-role="page" id="settingstasks">
-
-	<div data-role="header" data-position="fixed">
-		<h1>Settings</h1>
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#settingstasks" class="ui-btn-active ui-state-persist" >Tasks</a></li>
-				<li><a href="#settingsusers"  >Users</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /header -->
-	
-	
-<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-			<ul>
-				<li><a href="#userinfo" >User</a></li>
-				<li><a href="#housetask4sale" >House</a></li>
-				<li><a href="#cleanoffcurrent"   >Clean-Off</a></li>
-				<li><a href="#shoppage" >Shop</a></li>
-				<li><a href="#settingstasks" class="ui-btn-active ui-state-persist" >Setttings</a></li>
-			</ul>
-		</div><!-- /navbar -->
-</div>
-</div><!-- /page -->
-
-
-<div data-role="page" id="settingsusers">
-
-	<div data-role="header" data-position="fixed">
-		<h1>Settings</h1>
-		<div data-role="navbar">
-			<ul>
-				<li><a href="#settingstasks"  >Tasks</a></li>
-				<li><a href="#settingsusers" class="ui-btn-active ui-state-persist" >Users</a></li>
-			</ul>
-		</div><!-- /navbar -->
-	</div><!-- /header -->
-	
-	
-<div data-role="footer"  data-position="fixed">
-			<div data-role="navbar">
-			<ul>
-				<li><a href="#userinfo" >User</a></li>
-				<li><a href="#housetask4sale" >House</a></li>
-				<li><a href="#cleanoffcurrent"   >Clean-Off</a></li>
-				<li><a href="#shoppage" >Shop</a></li>
-				<li><a href="#settingstasks" class="ui-btn-active ui-state-persist" >Setttings</a></li>
-			</ul>
-		</div><!-- /navbar -->
-</div>
-</div><!-- /page -->
-
-</body>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery Mobile: Theme Download</title>
+		<link rel="stylesheet" href="themes/default.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	</head>
+	<body>
+		<div data-role="page" data-theme="a">
+			<div data-role="header" data-position="inline">
+				<h1>It Worked!</h1>
+			</div>
+			<div data-role="content" data-theme="a">
+				<p>Your theme was successfully downloaded. You can use this page as a reference for how to link it up!</p>
+				<pre>
+<strong>&lt;link rel=&quot;stylesheet&quot; href=&quot;themes/default.min.css&quot; /&gt;</strong>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css&quot; /&gt;
+&lt;script src=&quot;http://code.jquery.com/jquery-1.9.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js&quot;&gt;&lt;/script&gt;
+				</pre>
+				<p>This is content color swatch "A" and a preview of a <a href="#" class="ui-link">link</a>.</p>
+				<label for="slider1">Input slider:</label>
+				<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-theme="a" />
+				<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
+				<legend>Cache settings:</legend>
+				<input type="radio" name="radio-choice-a1" id="radio-choice-a1" value="on" checked="checked" />
+				<label for="radio-choice-a1">On</label>
+				<input type="radio" name="radio-choice-a1" id="radio-choice-b1" value="off"  />
+				<label for="radio-choice-b1">Off</label>
+				</fieldset>
+			</div>
+		</div>
+	</body>
 </html>
