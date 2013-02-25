@@ -1,18 +1,3 @@
-function GetPageAjax(page) {
-  alert('call ajax');
-  
-  $.ajax({
-    url: page,  
-    success: function(data) {
-		return data; 
-    },
-	error: function() {
-		var data = "wwwwww";
-		return data;
-	}
-  });
-}
-
 enyo.kind({
 	name: "App",
 	kind: enyo.FittableRows,
@@ -35,9 +20,9 @@ enyo.kind({
 			{tag: "div", name: "tipAmount"}
 		]},
 		{kind: "onyx.Toolbar", style: 'text-align: center;', components: [
-			{kind: "onyx.Button", content: "User", 		ontap: "calculateWithComponent"},
-			{kind: "onyx.Button", content: "House", 	ontap: "calculateWithComponent"},
-			{kind: "onyx.Button", content: "Clean-off", ontap: "calculateWithComponent"},
+			{kind: "onyx.Button", content: "User", 		ontap: "loadpage"},
+			{kind: "onyx.Button", content: "House", 	ontap: "loadpage"},
+			{kind: "onyx.Button", content: "Clean-off", ontap: "loadpage"},
 			{kind: "onyx.Button", content: "Shop", 		ontap: "loadpage"},
 			{kind: "onyx.Button", content: "Settings", 	ontap: "loadpage"}
 		]},
@@ -54,10 +39,20 @@ enyo.kind({
 	loadpage: function(inSource, inEvent) {		
 		//Setup request.
 		switch(inSource.content) {
+			case "User":
+				document.getElementById("app_scroller").innerHTML = "User Page";
+			break;
+			case "House":
+				document.getElementById("app_scroller").innerHTML = "House Page";
+			break;
+			case "Clean-off":
+				document.getElementById("app_scroller").innerHTML = "Clean-off Page";
+			break;
 			case "Shop":
-				var data = GetPageAjax("../debug/pages/settings.html");
-				alert(data);
-				document.getElementById("app_scroller").innerHTML = data;
+				document.getElementById("app_scroller").innerHTML = "Shop Page";
+			break;
+			case "Settings":
+				document.getElementById("app_scroller").innerHTML = "Settings Page";
 			break;
 		}
 	},
